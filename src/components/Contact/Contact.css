@@ -1,0 +1,67 @@
+
+/* Contact.css */
+
+.contact-head {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 60px;
+    width: 50%;
+    margin: auto;
+    margin-top: 43px;
+    margin-left: 350px; /* Adjusted for larger screens */
+}
+
+.h3-contact {
+    font-size: 1.5rem;
+    margin-bottom: 60px;
+    width: 50%;
+    margin: auto;
+    margin-top: 23px;
+    margin-left: 250px; /* Adjusted for larger screens */
+    padding-bottom: 34px;
+}
+
+.mail-contact {
+    font-size: 1.5rem;
+    margin-bottom: 60px;
+    width: 50%;
+    margin: auto;
+    margin-top: 23px;
+    margin-left: 300px; /* Adjusted for larger screens */
+    color: var(--blueColor);
+    border-bottom: rgb(20, 64, 131) 2px solid;
+}
+
+#contact {
+    margin-bottom: 56px;
+}
+
+@media only screen and (max-width: 600px) and (min-width: 300px){
+    .contact-head, .h3-contact, .mail-contact {
+        width: 80%; 
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center; 
+    }
+
+    .contact-head {
+        font-size: 2rem; 
+        margin-top: 20px;
+        margin-bottom: 30px;
+        margin-left: 100px;
+    }
+
+    .h3-contact {
+        font-size: 1.2rem;
+        margin-top: 15px;
+        margin-bottom: 30px;
+        padding-bottom: 20px; 
+    }
+
+    .mail-contact {
+        font-size: 1.2rem; 
+        margin-top: 15px;
+        margin-bottom: 30px;
+       margin-left: 70px;
+    }
+}

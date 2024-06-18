@@ -1,0 +1,45 @@
+/* Carrer.css */
+
+/* Improper use of display: flex; */
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    flex-direction: row;
+  
+    box-shadow: -34px -14px 32px;
+}
+
+/* Additional improper styling */
+#Education {
+    padding: 20px;
+    margin: 50px;
+}
+
+.edu-heading {
+    
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 60px;
+    width: 25%;
+    margin: auto;
+    margin-top: 43px;
+}
+
+#Education ul {
+    list-style-type: none;
+    padding: 0 150px;
+}
+
+#Education ul li {
+    margin-bottom: 5px;
+}
+@media only screen and (max-width: 600px) and (min-width: 300px){
+    .edu-heading{
+        padding-left: 0;
+        width: 50%;
+        margin: auto;
+    }
+}

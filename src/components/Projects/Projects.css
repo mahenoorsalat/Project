@@ -1,0 +1,116 @@
+/* Projects.css */
+
+#Projects {
+    margin-top: 67px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 200px;
+}
+
+.Project-heading {
+    font-weight: 900;
+    font-size: 3rem;
+    width: 50%;
+    margin: auto;
+    margin-left: 350px;
+    
+}
+
+.image {
+    width: 300px;
+    height: auto;
+    padding: 0px 85px;
+    margin: auto;
+    position: relative;
+    overflow: hidden; 
+}
+
+
+
+.p-overlayer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+}
+
+.p-overlayer strong {
+    font-size: 1.5rem;
+}
+
+.github-button {
+    border-bottom: 1px solid rgb(39, 98, 224);
+    width: 50%;
+    margin: auto;
+    color: var(--whiteColor);
+    margin-left: 450px;
+    margin-bottom: 90px;
+    padding-top: 32px;
+}
+
+.white {
+    color: var(--whiteColor);
+    margin-left: 82px;
+    border-bottom: 1px solid rgb(39, 98, 224);
+}
+
+.project-recent {
+    display: flex;
+    padding: 9px;
+    height: 123px;
+}
+
+.project {
+    margin-top: 56px;
+}
+
+/* Floating animation */
+.image {
+    animation: float 3s ease-in-out infinite;
+}
+.github{
+    padding-top: 32px;
+  }
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+@media only screen and (max-width: 600px) and (min-width: 300px) {
+  .Project-heading{
+    width: 50%;
+    margin: auto;
+   
+  }
+  .project-recent{
+    display: flex;
+    flex-direction: column;
+   
+  }
+  #Projects{
+    margin-bottom: 500px;
+  }
+  .github-button{
+  margin-left :200px;
+  margin-bottom: 100px ;
+  padding-top: 32px;
+ 
+  }
+  .github{
+    margin-bottom: 78px;
+    margin-top: 56px;
+    padding-top: 32px;
+  }
+}

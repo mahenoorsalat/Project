@@ -1,0 +1,52 @@
+.heading3{
+    font: bolder;
+    font-size: xx-large;
+    
+}
+#languages{
+    margin-top: 100px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    position: relative;
+    margin-bottom: 56px;
+}
+.languages-box h3{
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+.languages-box ul{
+    display: flex;
+    padding: 10px 15px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+.ul{
+    display: flex;
+    flex-wrap: wrap;
+    background: rgba(107, 103, 103, 0.575);
+    padding: 10px 15px;
+    border-radius: 38px;
+    margin-top: 10px;
+    text-decoration: none;
+    list-style: none;
+}
+.li{
+    padding: 5px;
+}
+.language-box ul li:hover {
+    animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

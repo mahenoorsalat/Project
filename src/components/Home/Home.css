@@ -1,0 +1,111 @@
+
+#home {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap-reverse;
+}
+
+.home-text {
+    width: 100%;
+    max-width: 500px;
+}
+
+.home-text strong {
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 1.65rem;
+    margin-bottom: 8px;
+}
+
+.home-text h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+    letter-spacing: 1px;
+
+}
+
+.home-text p {
+    color: var(--whiteColor);
+    margin: 20px 0;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    
+
+}
+.home-img{
+    min-width: 330px;
+    width: 330px;
+    height: 330px;
+    overflow: hidden;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8rem;
+    background: rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.home-img :hover::before{
+    content: "";
+    z-index: 5;
+    inset: 20px;
+    background: transparent;
+    font-size: medium;
+    font: bold;
+    inset: -20px 0;
+    text-align: center;
+    color: black;
+   
+
+}
+@keyframes animate {
+    0%{
+        transform: rotate(0deg);
+    }
+    0%{
+        transform: rotate(360deg);
+    }
+  
+}
+
+.img-box{
+    position: absolute;
+    inset:30px;
+    border: 6px solid rgba(0, 0, 0, 0.2);
+    z-index: 3;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: c;
+}
+
+
+.home-img::before {
+    content: "";
+    position: absolute;
+    inset: -10px 140px;
+    background: linear-gradient(315deg, rgb(73, 132, 209), rgb(190, 53, 218));
+    transition: 0.5s;
+    animation: animate 4s linear infinite;
+}
+.home-img ::before{
+    content: "";
+    position: absolute;
+    inset: -10px 140px;
+    background: linear-gradient(315deg , rgb(73, 132, 209) , rgb(190, 53, 218));
+    transition: 0.5s;
+    animation: animate 4s linear infinite;
+}
+
+
+@media only screen and (max-width: 600px) and (min-width: 300px)  {
+    #home{
+        margin: 32px;
+    }
+
+}

@@ -1,0 +1,94 @@
+
+
+.about-head{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 60px;
+    width: 25%;
+    margin: auto;
+    margin-top: 43px;
+    padding-bottom: 56px;
+   
+}
+.about{
+     padding-bottom: 56px;
+}
+.flex-container{
+    padding: 30px;
+}
+.head-about{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 60px;
+    width: 50%;
+    margin: auto;
+    
+}
+
+/* About.css */
+
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight{
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.flex-container{
+    padding: 30px;
+    animation: slideInFromLeft 4s ease-out infinite; 
+}
+
+.flex-container:nth-child(even) {
+    animation-name: slideInFromRight;
+}
+
+.flex-container img {
+    animation: slideInFromRight 4s ease-out infinite;
+}
+
+/* Media Query for responsiveness */
+@media only screen and (max-width: 600px) and (min-width: 300px) {
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex-container:nth-child(even) {
+        flex-direction: column-reverse; 
+    }
+
+    .head-about {
+        text-align: left; 
+    }
+
+    .flex-container img {
+        width: 100%; 
+        height: 100%; 
+    
+    }
+    .about-head{
+        width: 50%;
+        margin: auto;
+    }
+}
+
+
+
+
+
